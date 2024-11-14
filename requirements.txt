@@ -1,0 +1,5 @@
+zenml[server]==0.67.0
+gitdb==4.0.10
+GitPython==3.1.37
+smmap==5.0.1
+

@@ -1,0 +1,29 @@
+# 
+
+# environment configuration
+settings:
+  docker:
+    required_integrations:
+      - aws
+      - evidently
+      - kubeflow
+      - kubernetes
+      - mlflow
+      - sklearn
+      - slack
+
+# configuration of steps  
+steps:
+  notify_on_success:
+    parameters:
+      notify_on_success: False
+
+# configuration of the Model Control Plane
+model:
+  name: e2e_ts_forecast
+  version: staging
+
+# pipeline level extra configurations
+extra:
+  notify_on_failure: True
+
